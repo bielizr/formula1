@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+/* HEADER STYLES */
+header {
+    background-color: hsl(0, 0%, 100%);
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Coloca logo e nav em coluna */
+    align-items: center; /* Centraliza o conteúdo */
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center; /* Centraliza os itens da lista */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+/* PILOTS AND TEAMS CARD STYLES */
+.pilotos, .equipes, .contatos {
+    display: flex; /* Alinha os cards em linha */
+    flex-wrap: wrap; /* Permite que os cards se movam para a linha de baixo quando não houver espaço */
+    justify-content: center; /* Centraliza os cards */
+    margin: 40px; /* Margem em torno da seção */
+}
+
+.card {
+    background-color: #fff; /* Cor de fundo do card */
+    border: 2px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 200px; /* Largura do card */
+    text-align: center;
+    transition: transform 0.3s;
+    color: white; /* Texto branco */
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h2, .card p {
+    color: white; /* Texto dos títulos e parágrafos */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* CORRESPONDENTE A CADA EQUIPE E PILOTO */
+.equipe-redbull, .piloto-redbull, .contato-redbull {
+    background-color: #1E3A8A; /* Azul */
+}
+
+.equipe-ferrari, .piloto-ferrari, .contato-ferrari {
+    background-color: #A81010; /* Vermelho */
+}
+
+.equipe-mercedes, .piloto-mercedes, .contato-mercedes {
+    background-color: #00D2BE; /* Prata */
+}
+
+.equipe-mclaren, .piloto-mclaren, .contato-mclaren {
+    background-color: #FF8700; /* Laranja */
+}
+
+.equipe-aston, .piloto-aston, .contato-aston {
+    background-color: #005F00; /* Verde */
+}
+
+.equipe-alfa, .piloto-alfa, .contato-alfa {
+    background-color: #A50000; /* Vermelho */
+}
+
+.equipe-haas, .piloto-haas, .contato-haas {
+    background-color: #D2D2D2; /* Cinza */
+}
+
+.equipe-alphatauri, .piloto-alphatauri, .contato-alphatauri {
+    background-color: #1E4C92; /* Azul Escuro */
+}
+
+.equipe-williams, .piloto-williams, .contato-williams {
+    background-color: #005EB8; /* Azul */
+}
+
+.equipe-alpine, .piloto-alpine, .contato-alpine {
+    background-color: #FF7F00; /* Laranja */
+}
+
+/* CAROUSEL STYLES */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+/* CALENDAR STYLES */
+#calendario {
+    margin: 40px;
+}
+
+#calendario h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#calendario table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#calendario th, #calendario td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+#calendario th {
+    background-color: #720101; /* Cor de fundo dos cabeçalhos */
+    color: white;
+}
+
+#calendario td {
+    background-color: #f9f9f9; /* Cor de fundo das células */
+}
+
+#calendario tr:nth-child(even) td {
+    background-color: #f2f2f2; /* Cores alternadas para as linhas */
+}
+
+/* FOOTER STYLES */
+footer {
+    background-color: #970000;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-logo {
+    width: 100px;
+}
+
+.footer-left p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footer-center ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-center ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.footer-center ul li a:hover {
+    color: red;
+}
+
+.footer-right .social-icons {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-right .social-icons li a img {
+    width: 24px;
+    filter: brightness(0) invert(1);
+    transition: filter 0.3s ease;
+}
+
+.footer-right .social-icons li a img:hover {
+    filter: brightness(0.7) invert(1) sepia(1) hue-rotate(-50deg);
+}
+
+/* RESPONSIVITY */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-center ul {
+        flex-direction: column;
+    }
+
+    .footer-right {
+        margin-top: 15px;
+    }
+}
+
+/* DARK MODE STYLES */
+body.dark-mode {
+    background-color: #111;
+    color: white;
+}
+
+body.dark-mode header, body.dark-mode footer {
+    background-color: #222;
+}
+
+body.dark-mode .card {
+    background-color: #333;
+    color: white;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórmula 1 - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <img src="img/formula-1-logo-0.png" alt="F1 Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pilotos.html">Pilotos</a></li>
+                <li><a href="equipes.html">Equipes</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- Carrossel -->
+        <section id="carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="img/deportes-motor-formula1-circuitos-f1.jpg" alt="Corrida 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/F1_MADRID_SOLO_CIRCUITO-RdYXGVzZUpZ21fmcglWJuSM-1200x648@Relevo.webp" alt="Corrida 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="img/guide-circuit-monaco-formule-1.avif" alt="Corrida 3">
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Calendário de Corridas -->
+<section id="calendario">
+    <h2>Calendário das Corridas 2024</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>GP</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>GP da Austrália</td>
+                <td>21 de Março</td>
+            </tr>
+            <tr>
+                <td>GP do Bahrein</td>
+                <td>28 de Março</td>
+            </tr>
+            <tr>
+                <td>GP da Emília-Romanha</td>
+                <td>18 de Abril</td>
+            </tr>
+            <tr>
+                <td>GP de Mônaco</td>
+                <td>25 de Maio</td>
+            </tr>
+            <tr>
+                <td>GP da França</td>
+                <td>23 de Junho</td>
+            </tr>
+            <tr>
+                <td>GP da Inglaterra</td>
+                <td>7 de Julho</td>
+            </tr>
+            <tr>
+                <td>GP da Alemanha</td>
+                <td>28 de Julho</td>
+            </tr>
+            <tr>
+                <td>GP da Hungria</td>
+                <td>4 de Agosto</td>
+            </tr>
+            <tr>
+                <td>GP da Bélgica</td>
+                <td>1 de Setembro</td>
+            </tr>
+            <tr>
+                <td>GP da Itália</td>
+                <td>8 de Setembro</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="img/formula-1-logo-0.png" alt="F1 Logo" class="footer-logo">
+                <p>© 2024 F1 Pilotos - Todos os direitos reservados.</p>
+            </div>
+            <div class="footer-center">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pilotos.html">Pilotos</a></li>
+                    <li><a href="equipes.html">Equipes</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <ul class="social-icons">
+                    <li><a href="#"><img src="icon-facebook.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="icon-twitter.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="icon-instagram.png" alt="Instagram"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
